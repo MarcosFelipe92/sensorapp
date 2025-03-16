@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sensor App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="/main.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@stomp/stompjs@7.0.0/bundles/stomp.umd.min.js"></script>
+    <script src="/app.js"></script>
+</head>
+
+<body>
+    <div id="main-content" class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2 style="font-weight: bold; color: #ffffff;">Live Sensor Data</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card temperature-card">
+                    <div class="card-body">
+                        <i class="fas fa-thermometer-half icon"></i>
+                        <h5 class="card-title">Temperatura</h5>
+                        <p class="card-text" id="temperature-data">Carregando...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card luminosity-card">
+                    <div class="card-body">
+                        <i class="fas fa-sun icon"></i>
+                        <h5 class="card-title">Luminosidade</h5>
+                        <p class="card-text" id="luminosity-data">Carregando...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card humidity-card">
+                    <div class="card-body">
+                        <i class="fas fa-tint icon"></i>
+                        <h5 class="card-title">Umidade</h5>
+                        <p class="card-text" id="humidity-data">Carregando...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

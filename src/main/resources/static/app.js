@@ -29,17 +29,9 @@ function disconnect() {
 }
 
 function updateSensorData(data) {
-  $("#live-sensor-data").html(`
-    <tr>
-      <td>${data.temperatureMessage}</td>      
-    </tr>
-    <tr>
-      <td>${data.luminosityMessage}</td>      
-    </tr>
-    <tr>
-      <td>${data.humidityMessage}</td>      
-    </tr>
-  `);
+  $("#temperature-data").text(data.temperatureMessage);
+  $("#luminosity-data").text(data.luminosityMessage);
+  $("#humidity-data").text(data.humidityMessage);
 }
 
 $(document).ready(() => {
