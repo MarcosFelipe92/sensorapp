@@ -14,7 +14,7 @@ public class MockDataSource implements SensorData {
 
     private SensorOutput generateRandomData() {
         return new SensorOutput(
-                String.format("%.2f", 20 + random.nextDouble() * 100),
+                String.format("%.2f", random.nextDouble() * 180),
                 String.format("%.2f", random.nextDouble() * 471),
                 String.format("%.2f", random.nextDouble() * 100));
     }
